@@ -68,18 +68,6 @@ export default function Footer() {
                         <p className="text-sm text-gray-500 leading-relaxed">
                             Soluções que transformam o seu negócio. Tecnologia de ponta desenvolvida no Brasil.
                         </p>
-                        <div className="flex items-center gap-2 pt-2">
-                            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                                <svg viewBox="0 0 24 24" className="w-5 h-5 text-black" fill="currentColor">
-                                    <rect x="5" y="2" width="14" height="20" rx="2" fill="currentColor" />
-                                    <rect x="7" y="5" width="10" height="12" rx="1" fill="#050505" />
-                                </svg>
-                            </div>
-                            <span className="text-sm font-bold">
-                                <span className="text-white">RAT</span>
-                                <span className="text-primary"> Móvel</span>
-                            </span>
-                        </div>
                     </div>
 
                     {/* Footer link sections */}
@@ -175,7 +163,7 @@ export default function Footer() {
 
             {/* Text hover effect */}
             <div className="lg:flex hidden h-[25rem] -mt-48 -mb-32 justify-center pointer-events-none">
-                <TextHoverEffect text="RATMÓVEL" className="z-50" />
+                <TextHoverEffect text="INOVASYS" className="z-50" />
             </div>
 
             <FooterBackgroundGradient />

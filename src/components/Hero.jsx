@@ -5,7 +5,7 @@ export default function Hero() {
     const benefits = ["ERP Completo", "Gestão de Técnicos", "Financeiro Integrado", "Funciona Offline"];
 
     return (
-        <section className="relative min-h-screen pt-16 pb-24 overflow-hidden flex items-center">
+        <section className="relative min-h-screen pt-20 pb-16 overflow-hidden flex items-center">
 
             {/* Background - gradiente mais vibrante */}
             <div className="absolute inset-0 z-0">
@@ -23,11 +23,31 @@ export default function Hero() {
                 }}
             />
 
-            {/* Main container - padding aumentado para mobile */}
+            {/* Main container */}
             <div className="w-full max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+
+                {/* Logo no topo - visível em mobile */}
+                <div className="flex justify-center lg:justify-start mb-8 animate-fadeIn">
+                    <div className="flex items-center gap-3">
+                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/20">
+                            <svg viewBox="0 0 24 24" className="w-7 h-7 text-black" fill="currentColor">
+                                <rect x="5" y="2" width="14" height="20" rx="2" fill="currentColor" />
+                                <rect x="7" y="5" width="10" height="12" rx="1" fill="#070a08" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span className="text-2xl font-bold">
+                                <span className="text-white">RAT</span>
+                                <span className="text-primary"> Móvel</span>
+                            </span>
+                            <p className="text-xs text-gray-500">by InovaSys</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
-                    {/* Left: Text content */}
+                    {/* Left: Text content - PRIMEIRO no mobile */}
                     <div className="text-center lg:text-left space-y-6 animate-fadeIn">
                         {/* Badge */}
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-sm font-medium text-primary">
@@ -49,7 +69,7 @@ export default function Hero() {
                             Do agendamento ao faturamento: técnicos, máquinas, orçamentos e financeiro em um único app.
                         </p>
 
-                        {/* Visual antes/depois - mobile friendly */}
+                        {/* Visual antes/depois */}
                         <div className="flex items-center justify-center lg:justify-start gap-4 py-2">
                             <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-red-500/10 border border-red-500/20">
                                 <FileX size={18} className="text-red-400" />
@@ -62,7 +82,7 @@ export default function Hero() {
                             </div>
                         </div>
 
-                        {/* CTAs - botões maiores para touch */}
+                        {/* CTAs */}
                         <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 pt-2">
                             <button className="group w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary to-emerald-400 text-black font-bold text-lg rounded-2xl flex items-center justify-center gap-3 shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out will-change-transform min-h-[56px]">
                                 <Zap size={20} className="fill-black transition-transform duration-300 group-hover:scale-110" />
@@ -88,8 +108,8 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    {/* Right: Imagem do técnico */}
-                    <div className="relative flex justify-center animate-slideUp order-first lg:order-last">
+                    {/* Right: Imagem do técnico - SEGUNDO no mobile (order-last em mobile) */}
+                    <div className="relative flex justify-center animate-slideUp order-last">
                         {/* Container da imagem com glow */}
                         <div className="relative">
                             {/* Glow effect */}
@@ -100,7 +120,7 @@ export default function Hero() {
                                 <img
                                     src="/images/hero-technician.png"
                                     alt="Técnico em campo usando o RAT Móvel"
-                                    className="w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px] h-auto object-cover"
+                                    className="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] h-auto object-cover"
                                     loading="eager"
                                 />
 
@@ -119,7 +139,7 @@ export default function Hero() {
                                 </div>
                             </div>
 
-                            {/* Floating card - Stats */}
+                            {/* Floating card - ERP */}
                             <div className="absolute -left-4 sm:-left-8 top-1/4 bg-black/90 backdrop-blur-sm border border-white/10 rounded-xl p-3 shadow-xl hidden sm:block animate-float">
                                 <div className="flex items-center gap-2">
                                     <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
@@ -132,7 +152,7 @@ export default function Hero() {
                                 </div>
                             </div>
 
-                            {/* Floating card - Revenue */}
+                            {/* Floating card - Produtividade */}
                             <div className="absolute -right-4 sm:-right-8 top-1/2 bg-black/90 backdrop-blur-sm border border-secondary/20 rounded-xl p-3 shadow-xl hidden sm:block animate-float-delayed">
                                 <div className="flex items-center gap-2">
                                     <div className="w-8 h-8 rounded-lg bg-secondary/20 flex items-center justify-center">
