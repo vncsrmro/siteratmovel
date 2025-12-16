@@ -60,30 +60,74 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile Hamburger */}
-                <button
+                <motion.button
                     className="md:hidden text-white p-2"
                     onClick={() => setIsOpen(!isOpen)}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 25 }}
                 >
-                    {isOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
+                    <motion.div
+                        initial={false}
+                        animate={{ rotate: isOpen ? 90 : 0 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    >
+                        {isOpen ? <X size={24} /> : <Menu size={24} />}
+                    </motion.div>
+                </motion.button>
             </div>
 
             {/* Mobile Menu */}
-            <AnimatePresence>
+            <AnimatePresence mode="wait">
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
+                        initial={{ opacity: 0, y: -20, scale: 0.95 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: -10, scale: 0.98 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 300,
+                            damping: 30,
+                            mass: 0.8,
+                        }}
+                        style={{ willChange: "transform, opacity" }}
                         className="absolute top-20 left-4 right-4 bg-black/95 backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:hidden flex flex-col gap-4 z-50"
                     >
-                        <a href="#funcionalidades" className="text-gray-300 hover:text-primary py-2" onClick={() => setIsOpen(false)}>Funcionalidades</a>
-                        <a href="#beneficios" className="text-gray-300 hover:text-primary py-2" onClick={() => setIsOpen(false)}>Benefícios</a>
-                        <a href="#contato" className="text-gray-300 hover:text-primary py-2" onClick={() => setIsOpen(false)}>Contato</a>
-                        <button className="mt-2 bg-gradient-to-r from-primary to-secondary w-full text-black font-bold py-4 rounded-xl flex items-center justify-center gap-2">
+                        {[
+                            { href: "#funcionalidades", label: "Funcionalidades" },
+                            { href: "#beneficios", label: "Benefícios" },
+                            { href: "#contato", label: "Contato" },
+                        ].map((item, index) => (
+                            <motion.a
+                                key={item.href}
+                                href={item.href}
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 400,
+                                    damping: 25,
+                                    delay: index * 0.05,
+                                }}
+                                className="text-gray-300 hover:text-primary py-2 transition-colors duration-200"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                {item.label}
+                            </motion.a>
+                        ))}
+                        <motion.button
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                type: "spring",
+                                stiffness: 400,
+                                damping: 25,
+                                delay: 0.15,
+                            }}
+                            className="mt-2 bg-gradient-to-r from-primary to-secondary w-full text-black font-bold py-4 rounded-xl flex items-center justify-center gap-2 active:scale-[0.98] transition-transform duration-150"
+                        >
                             <Zap size={18} className="fill-black" />
                             Área do Cliente
-                        </button>
+                        </motion.button>
                     </motion.div>
                 )}
             </AnimatePresence>
