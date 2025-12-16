@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
 import { Home, Zap, Star, Shield, CreditCard, MessageCircle } from "lucide-react";
@@ -14,9 +14,14 @@ const navItems = [
 
 export function TubelightNavbar({ className }) {
     const [activeTab, setActiveTab] = useState('Início');
+    const isScrollingRef = useRef(false);
+    const scrollTimeoutRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
+            // Se o usuário clicou em um item, ignorar detecção de scroll
+            if (isScrollingRef.current) return;
+
             const sections = ['inicio', 'funcionalidades', 'depoimentos', 'seguranca', 'precos', 'contato'];
             const scrollPos = window.scrollY + 200;
 
@@ -32,16 +37,35 @@ export function TubelightNavbar({ className }) {
 
         window.addEventListener('scroll', handleScroll, { passive: true });
         handleScroll();
-        return () => window.removeEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            if (scrollTimeoutRef.current) {
+                clearTimeout(scrollTimeoutRef.current);
+            }
+        };
     }, []);
 
     const handleClick = (e, name, url) => {
         e.preventDefault();
+
+        // Bloquear detecção de scroll durante a animação
+        isScrollingRef.current = true;
         setActiveTab(name);
+
         const element = document.querySelector(url);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
+
+        // Limpar timeout anterior se existir
+        if (scrollTimeoutRef.current) {
+            clearTimeout(scrollTimeoutRef.current);
+        }
+
+        // Reativar detecção de scroll após animação terminar
+        scrollTimeoutRef.current = setTimeout(() => {
+            isScrollingRef.current = false;
+        }, 800);
     };
 
     return (
