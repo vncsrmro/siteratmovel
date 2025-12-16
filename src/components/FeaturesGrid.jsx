@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Card, CardContent } from './ui/card';
 import {
     PenLine, Mic, Camera, Users, History,
@@ -71,11 +70,11 @@ export default function FeaturesGrid() {
     const [isExpanded, setIsExpanded] = useState(false);
 
     return (
-        <section className="py-20 md:py-32 px-6 sm:px-8 lg:px-12 relative overflow-hidden">
-            {/* Background effects */}
+        <section className="py-16 md:py-24 px-6 sm:px-8 lg:px-12 relative overflow-hidden section-light">
+            {/* Background effects - otimizado */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-1/4 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
-                <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-secondary/5 rounded-full blur-3xl" />
+                <div className="absolute top-1/4 left-0 w-64 h-64 bg-primary/5 rounded-full blur-2xl" />
+                <div className="absolute bottom-1/4 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-2xl" />
             </div>
 
             <div className="max-w-5xl mx-auto relative z-10">
@@ -97,7 +96,7 @@ export default function FeaturesGrid() {
                         return (
                             <div
                                 key={i}
-                                className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:border-primary/30 transition-colors"
+                                className="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:border-primary/30 transition-colors duration-200"
                             >
                                 <Icon size={14} className="text-primary" />
                                 <span className="text-xs sm:text-sm font-medium text-white">{diff.label}</span>
@@ -110,7 +109,7 @@ export default function FeaturesGrid() {
                 <div className="grid grid-cols-6 gap-3 sm:gap-4">
 
                     {/* Card 1: 100% Offline - DESTAQUE */}
-                    <Card className="col-span-6 sm:col-span-3 lg:col-span-2 bg-white/[0.02] border-white/10 hover:border-primary/30 transition-colors overflow-hidden">
+                    <Card className="col-span-6 sm:col-span-3 lg:col-span-2 bg-white/[0.02] border-white/10 hover:border-primary/30 transition-colors duration-200 overflow-hidden">
                         <CardContent className="pt-6 text-center">
                             <div className="relative flex h-24 w-full items-center justify-center">
                                 <svg className="absolute inset-0 w-full h-full text-primary/20" viewBox="0 0 254 104" fill="none">
@@ -124,7 +123,7 @@ export default function FeaturesGrid() {
                     </Card>
 
                     {/* Card 2: Assinatura Digital */}
-                    <Card className="col-span-6 sm:col-span-3 lg:col-span-2 bg-white/[0.02] border-white/10 hover:border-primary/30 transition-colors overflow-hidden">
+                    <Card className="col-span-6 sm:col-span-3 lg:col-span-2 bg-white/[0.02] border-white/10 hover:border-primary/30 transition-colors duration-200 overflow-hidden">
                         <CardContent className="pt-6">
                             <div className="relative mx-auto flex aspect-square w-28 rounded-full border border-white/10 items-center justify-center before:absolute before:-inset-2 before:rounded-full before:border before:border-white/5">
                                 <PenLine size={40} className="text-primary" strokeWidth={1.5} />
@@ -137,7 +136,7 @@ export default function FeaturesGrid() {
                     </Card>
 
                     {/* Card 3: 100% Web - DESTAQUE GRADIENTE */}
-                    <Card className="col-span-6 sm:col-span-3 lg:col-span-2 bg-gradient-to-br from-primary/10 to-transparent border-primary/20 hover:border-primary/40 transition-colors overflow-hidden">
+                    <Card className="col-span-6 sm:col-span-3 lg:col-span-2 bg-gradient-to-br from-primary/10 to-transparent border-primary/20 hover:border-primary/40 transition-colors duration-200 overflow-hidden">
                         <CardContent className="pt-6 text-center">
                             <div className="relative mx-auto flex aspect-square w-20 rounded-2xl bg-primary/20 border border-primary/30 items-center justify-center">
                                 <Globe size={36} className="text-primary" strokeWidth={1.5} />
@@ -150,7 +149,7 @@ export default function FeaturesGrid() {
                     </Card>
 
                     {/* Card 4: Entrada de Voz - GRANDE */}
-                    <Card className="col-span-6 lg:col-span-3 bg-white/[0.02] border-white/10 hover:border-secondary/30 transition-colors overflow-hidden">
+                    <Card className="col-span-6 lg:col-span-3 bg-white/[0.02] border-white/10 hover:border-secondary/30 transition-colors duration-200 overflow-hidden">
                         <CardContent className="grid sm:grid-cols-2 gap-6 pt-6">
                             <div className="flex flex-col justify-between space-y-4">
                                 <div className="relative flex aspect-square w-12 rounded-full border border-white/10 items-center justify-center before:absolute before:-inset-2 before:rounded-full before:border before:border-white/5">
@@ -158,7 +157,7 @@ export default function FeaturesGrid() {
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-white">Entrada de Voz</h3>
-                                    <p className="text-gray-400 text-sm mt-2">Dite o relatório. O app escreve. Economize 50% do tempo de preenchimento.</p>
+                                    <p className="text-gray-400 text-sm mt-2">Dite o relatório. O app escreve. Economize 50% do tempo.</p>
                                 </div>
                             </div>
                             <div className="relative rounded-xl border border-white/5 p-4 bg-black/30">
@@ -173,17 +172,17 @@ export default function FeaturesGrid() {
                                             <Mic size={14} className="text-secondary" />
                                         </div>
                                         <div className="flex-1 h-3 bg-secondary/20 rounded-full overflow-hidden">
-                                            <div className="h-full w-3/4 bg-gradient-to-r from-secondary to-primary rounded-full animate-pulse" />
+                                            <div className="h-full w-3/4 bg-gradient-to-r from-secondary to-primary rounded-full" />
                                         </div>
                                     </div>
-                                    <p className="text-[10px] text-gray-500 mt-2">"Troca de compressor realizada com sucesso..."</p>
+                                    <p className="text-[10px] text-gray-500 mt-2">"Troca de compressor realizada..."</p>
                                 </div>
                             </div>
                         </CardContent>
                     </Card>
 
                     {/* Card 5: Gestão de Equipe - GRANDE */}
-                    <Card className="col-span-6 lg:col-span-3 bg-white/[0.02] border-white/10 hover:border-purple-500/30 transition-colors overflow-hidden">
+                    <Card className="col-span-6 lg:col-span-3 bg-white/[0.02] border-white/10 hover:border-purple-500/30 transition-colors duration-200 overflow-hidden">
                         <CardContent className="grid sm:grid-cols-2 gap-6 pt-6">
                             <div className="flex flex-col justify-between space-y-4">
                                 <div className="relative flex aspect-square w-12 rounded-full border border-white/10 items-center justify-center before:absolute before:-inset-2 before:rounded-full before:border before:border-white/5">
@@ -191,7 +190,7 @@ export default function FeaturesGrid() {
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-white">Gestão de Equipe</h3>
-                                    <p className="text-gray-400 text-sm mt-2">Painel Master para você, app simples para o técnico. Perfis separados.</p>
+                                    <p className="text-gray-400 text-sm mt-2">Painel Master para você, app simples para o técnico.</p>
                                 </div>
                             </div>
                             <div className="relative flex flex-col justify-center space-y-3">
@@ -212,7 +211,7 @@ export default function FeaturesGrid() {
                     </Card>
 
                     {/* Cards pequenos */}
-                    <Card className="col-span-3 sm:col-span-2 bg-white/[0.02] border-white/10 hover:border-orange-500/30 transition-colors">
+                    <Card className="col-span-3 sm:col-span-2 bg-white/[0.02] border-white/10 hover:border-orange-500/30 transition-colors duration-200">
                         <CardContent className="pt-6 text-center">
                             <div className="w-10 h-10 mx-auto rounded-xl bg-orange-500/10 flex items-center justify-center">
                                 <Camera size={20} className="text-orange-400" />
@@ -222,7 +221,7 @@ export default function FeaturesGrid() {
                         </CardContent>
                     </Card>
 
-                    <Card className="col-span-3 sm:col-span-2 bg-white/[0.02] border-white/10 hover:border-rose-500/30 transition-colors">
+                    <Card className="col-span-3 sm:col-span-2 bg-white/[0.02] border-white/10 hover:border-rose-500/30 transition-colors duration-200">
                         <CardContent className="pt-6 text-center">
                             <div className="w-10 h-10 mx-auto rounded-xl bg-rose-500/10 flex items-center justify-center">
                                 <History size={20} className="text-rose-400" />
@@ -232,7 +231,7 @@ export default function FeaturesGrid() {
                         </CardContent>
                     </Card>
 
-                    <Card className="col-span-6 sm:col-span-2 bg-white/[0.02] border-white/10 hover:border-emerald-500/30 transition-colors">
+                    <Card className="col-span-6 sm:col-span-2 bg-white/[0.02] border-white/10 hover:border-emerald-500/30 transition-colors duration-200">
                         <CardContent className="pt-6 text-center">
                             <div className="w-10 h-10 mx-auto rounded-xl bg-emerald-500/10 flex items-center justify-center">
                                 <Calculator size={20} className="text-emerald-400" />
@@ -247,67 +246,60 @@ export default function FeaturesGrid() {
                 <div className="mt-10">
                     <button
                         onClick={() => setIsExpanded(!isExpanded)}
-                        className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-primary/30 rounded-2xl text-white font-medium transition-colors"
+                        className="w-full flex items-center justify-center gap-3 py-4 px-6 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-primary/30 rounded-2xl text-white font-medium transition-colors duration-200"
                     >
                         <span>{isExpanded ? 'Esconder módulos' : 'Ver todos os 14 módulos'}</span>
-                        <motion.div animate={{ rotate: isExpanded ? 180 : 0 }} transition={{ duration: 0.2 }}>
-                            <ChevronDown size={20} className="text-primary" />
-                        </motion.div>
+                        <ChevronDown
+                            size={20}
+                            className={`text-primary transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`}
+                        />
                     </button>
                 </div>
 
-                {/* Área Expandível */}
-                <AnimatePresence>
-                    {isExpanded && (
-                        <motion.div
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: 'auto', opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.3 }}
-                            className="overflow-hidden"
-                        >
-                            <div className="pt-8 space-y-6">
-                                {moduleCategories.map((cat) => {
-                                    const c = colors[cat.color];
-                                    return (
-                                        <div key={cat.name}>
-                                            <div className="flex items-center gap-3 mb-4">
-                                                <span className={`px-3 py-1 rounded-full text-xs font-semibold ${c.bg} ${c.text}`}>
-                                                    {cat.name}
-                                                </span>
-                                                <div className="flex-1 h-px bg-white/5" />
-                                            </div>
-                                            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                                                {cat.modules.map((mod) => {
-                                                    const Icon = mod.icon;
-                                                    return (
-                                                        <div key={mod.name} className={`p-4 rounded-xl ${c.bg} border ${c.border}`}>
-                                                            <div className="flex items-center gap-3">
-                                                                <div className={`w-10 h-10 rounded-lg ${c.bg} flex items-center justify-center flex-shrink-0`}>
-                                                                    <Icon size={18} className={c.text} />
-                                                                </div>
-                                                                <div className="min-w-0">
-                                                                    <h4 className="font-semibold text-white text-sm truncate">{mod.name}</h4>
-                                                                    <p className="text-xs text-gray-400 truncate">{mod.desc}</p>
-                                                                </div>
-                                                            </div>
+                {/* Área Expandível - CSS transition em vez de framer-motion */}
+                <div
+                    className={`overflow-hidden transition-all duration-300 ease-out ${isExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}
+                >
+                    <div className="pt-8 space-y-6">
+                        {moduleCategories.map((cat) => {
+                            const c = colors[cat.color];
+                            return (
+                                <div key={cat.name}>
+                                    <div className="flex items-center gap-3 mb-4">
+                                        <span className={`px-3 py-1 rounded-full text-xs font-semibold ${c.bg} ${c.text}`}>
+                                            {cat.name}
+                                        </span>
+                                        <div className="flex-1 h-px bg-white/5" />
+                                    </div>
+                                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                                        {cat.modules.map((mod) => {
+                                            const Icon = mod.icon;
+                                            return (
+                                                <div key={mod.name} className={`p-4 rounded-xl ${c.bg} border ${c.border}`}>
+                                                    <div className="flex items-center gap-3">
+                                                        <div className={`w-10 h-10 rounded-lg ${c.bg} flex items-center justify-center flex-shrink-0`}>
+                                                            <Icon size={18} className={c.text} />
                                                         </div>
-                                                    );
-                                                })}
-                                            </div>
-                                        </div>
-                                    );
-                                })}
-                                <div className="text-center pt-4">
-                                    <button className="px-8 py-4 bg-gradient-to-r from-primary to-emerald-400 text-black font-bold rounded-2xl hover:shadow-lg hover:shadow-primary/20 transition-shadow">
-                                        <Zap size={18} className="inline mr-2 fill-black" />
-                                        Testar Grátis Agora
-                                    </button>
+                                                        <div className="min-w-0">
+                                                            <h4 className="font-semibold text-white text-sm truncate">{mod.name}</h4>
+                                                            <p className="text-xs text-gray-400 truncate">{mod.desc}</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
+                            );
+                        })}
+                        <div className="text-center pt-4">
+                            <button className="px-8 py-4 bg-gradient-to-r from-primary to-emerald-400 text-black font-bold rounded-2xl hover:shadow-lg hover:shadow-primary/20 transition-shadow duration-200">
+                                <Zap size={18} className="inline mr-2 fill-black" />
+                                Testar Grátis Agora
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
                 {!isExpanded && (
                     <p className="text-center text-gray-500 text-sm mt-6">

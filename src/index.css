@@ -1,6 +1,8 @@
+/* stylelint-disable at-rule-no-unknown */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* stylelint-enable at-rule-no-unknown */
 
 @layer base {
   :root {
@@ -18,7 +20,23 @@
     margin: 0;
     min-width: 320px;
     min-height: 100vh;
-    @apply bg-background text-white selection:bg-primary selection:text-black overflow-x-hidden;
+    background-color: #070a08;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  /* Seções alternadas para quebrar monotonia */
+  .section-light {
+    background: linear-gradient(180deg, rgba(0, 255, 148, 0.02) 0%, transparent 50%, rgba(0, 184, 255, 0.02) 100%);
+  }
+
+  .section-accent {
+    background: linear-gradient(180deg, #0a0f0c 0%, #080c0a 50%, #0a0f0c 100%);
+  }
+
+  body ::selection {
+    background-color: #00FF94;
+    color: black;
   }
 
   html {
@@ -72,12 +90,18 @@ a {
 
 /* Gradient text utility */
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #00FF94, #00B8FF);
 }
 
 /* Glass effect utility */
 .glass {
-  @apply backdrop-blur-xl bg-white/5 border border-white/10;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Pulse animation variation */
@@ -180,4 +204,53 @@ a {
 .animate-float-delayed {
   animation: float-delayed 5s ease-in-out infinite;
   animation-delay: 1s;
+}
+
+/* Performance-optimized animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.6s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+  .animate-fadeIn,
+  .animate-slideUp,
+  .animate-float,
+  .animate-float-delayed,
+  .animate-bounce,
+  .animate-pulse {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Wifi, WifiOff, PieChart, Settings, Cloud, RefreshCw } from 'lucide-react';
+import { WifiOff, PieChart, Settings } from 'lucide-react';
 
 const pillars = [
     {
@@ -49,24 +48,19 @@ const colorMap = {
 
 export default function Pillars() {
     return (
-        <section className="py-20 px-4 relative">
+        <section className="py-16 sm:py-20 px-6 sm:px-8 lg:px-12 relative section-accent">
             <div className="absolute inset-0 bg-gradient-to-b from-background via-[#080808] to-background pointer-events-none" />
 
             <div className="max-w-6xl mx-auto relative z-10">
                 {/* Header */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-center mb-12"
-                >
+                <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
                         Por que <span className="text-primary">RAT Móvel</span>?
                     </h2>
                     <p className="text-gray-400 max-w-xl mx-auto">
                         Os 3 pilares que fazem a diferença na sua assistência técnica
                     </p>
-                </motion.div>
+                </div>
 
                 {/* 3 Pillars Grid */}
                 <div className="grid md:grid-cols-3 gap-6">
@@ -75,13 +69,9 @@ export default function Pillars() {
                         const Icon = pillar.icon;
 
                         return (
-                            <motion.div
+                            <div
                                 key={i}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.1 }}
-                                className={`relative p-6 rounded-2xl ${colors.bg} border ${colors.border} hover:scale-[1.02] transition-transform`}
+                                className={`relative p-6 rounded-2xl ${colors.bg} border ${colors.border} hover:scale-[1.02] transition-transform duration-200`}
                             >
                                 {/* Badge */}
                                 <span className={`absolute top-4 right-4 text-[10px] px-2 py-1 rounded-full ${colors.bg} ${colors.text} font-medium`}>
@@ -96,7 +86,7 @@ export default function Pillars() {
                                 {/* Content */}
                                 <h3 className="text-xl font-bold text-white mb-2">{pillar.title}</h3>
                                 <p className="text-gray-400 text-sm leading-relaxed">{pillar.description}</p>
-                            </motion.div>
+                            </div>
                         );
                     })}
                 </div>
