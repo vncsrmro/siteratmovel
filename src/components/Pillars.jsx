@@ -3,25 +3,25 @@ import { WifiOff, PieChart, Settings } from 'lucide-react';
 
 const pillars = [
     {
-        icon: WifiOff,
-        title: "Operação Blindada",
-        description: "Funciona 100% Offline. Seus técnicos nunca param, mesmo sem internet. Sincronização automática quando reconecta.",
-        color: "primary",
-        badge: "Offline First"
-    },
-    {
         icon: PieChart,
-        title: "Financeiro Integrado",
-        description: "Chega de planilhas. Controle orçamentos, faturamento e reembolsos de KM em tempo real.",
-        color: "secondary",
-        badge: "Tempo Real"
+        title: "ERP de Bolso Completo",
+        description: "Chega de planilhas! Controle orçamentos, faturamento, reembolsos de KM e toda gestão financeira em tempo real.",
+        color: "primary",
+        badge: "Diferencial #1"
     },
     {
         icon: Settings,
-        title: "Histórico de Máquinas",
-        description: "O fim do 'eu acho'. Saiba o histórico completo de cada equipamento com um clique. CRM de ativos completo.",
+        title: "CRM de Ativos",
+        description: "O fim do 'eu acho'. Histórico completo de cada equipamento com um clique. Saiba tudo sobre cada máquina atendida.",
+        color: "secondary",
+        badge: "Gestão Completa"
+    },
+    {
+        icon: WifiOff,
+        title: "Funciona Offline",
+        description: "Seus técnicos nunca param, mesmo sem internet. Sincronização automática quando reconecta.",
         color: "purple",
-        badge: "CRM Completo"
+        badge: "Bônus"
     },
 ];
 

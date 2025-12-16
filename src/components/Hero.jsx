@@ -2,7 +2,7 @@ import React from 'react';
 import { Zap, Play, Sparkles, CheckCircle, FileX, Smartphone } from 'lucide-react';
 
 export default function Hero() {
-    const benefits = ["100% Web", "Funciona Offline", "PWA Instalável", "Auto-save"];
+    const benefits = ["ERP Completo", "Gestão de Técnicos", "Financeiro Integrado", "Funciona Offline"];
 
     return (
         <section className="relative min-h-screen pt-16 pb-24 overflow-hidden flex items-center">
@@ -45,8 +45,8 @@ export default function Hero() {
 
                         {/* Subheadline */}
                         <p className="text-base sm:text-lg text-gray-400 max-w-lg leading-relaxed mx-auto lg:mx-0">
-                            Do agendamento ao faturamento. Gerencie técnicos, máquinas e orçamentos em um único app.
-                            <span className="text-white font-medium"> Funciona Offline. Assinatura na Tela. Sem Papel.</span>
+                            <span className="text-white font-medium">ERP completo na palma da mão.</span>{' '}
+                            Do agendamento ao faturamento: técnicos, máquinas, orçamentos e financeiro em um único app.
                         </p>
 
                         {/* Visual antes/depois - mobile friendly */}
@@ -126,8 +126,8 @@ export default function Hero() {
                                         <CheckCircle size={14} className="text-primary" />
                                     </div>
                                     <div>
-                                        <p className="text-[10px] text-gray-400">Status</p>
-                                        <p className="text-xs font-bold text-white">100% Offline ✓</p>
+                                        <p className="text-[10px] text-gray-400">Sistema</p>
+                                        <p className="text-xs font-bold text-white">ERP Completo ✓</p>
                                     </div>
                                 </div>
                             </div>
