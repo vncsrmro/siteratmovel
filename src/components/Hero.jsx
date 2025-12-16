@@ -64,13 +64,13 @@ export default function Hero() {
 
                         {/* CTAs - botões maiores para touch */}
                         <div className="flex flex-col sm:flex-row items-center lg:items-start gap-4 pt-2">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary to-emerald-400 text-black font-bold text-lg rounded-2xl flex items-center justify-center gap-3 shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:scale-[1.02] transition-all duration-200 min-h-[56px]">
-                                <Zap size={20} className="fill-black" />
+                            <button className="group w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-primary to-emerald-400 text-black font-bold text-lg rounded-2xl flex items-center justify-center gap-3 shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out will-change-transform min-h-[56px]">
+                                <Zap size={20} className="fill-black transition-transform duration-300 group-hover:scale-110" />
                                 Testar Grátis Agora
                             </button>
 
-                            <button className="w-full sm:w-auto px-8 py-4 bg-white/5 text-white font-semibold text-lg rounded-2xl hover:bg-white/10 border border-white/20 flex items-center justify-center gap-3 hover:scale-[1.02] transition-all duration-200 min-h-[56px]">
-                                <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+                            <button className="group w-full sm:w-auto px-8 py-4 bg-white/5 text-white font-semibold text-lg rounded-2xl hover:bg-white/10 border border-white/20 hover:border-white/30 flex items-center justify-center gap-3 transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out will-change-transform min-h-[56px]">
+                                <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                                     <Play size={14} className="fill-white ml-0.5" />
                                 </div>
                                 Ver Demo

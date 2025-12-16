@@ -85,7 +85,14 @@ body::before {
 
 /* Link hover effects */
 a {
-  transition: color 0.2s ease;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Button global styles for smooth animations */
+button {
+  -webkit-tap-highlight-color: transparent;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 /* Gradient text utility */
