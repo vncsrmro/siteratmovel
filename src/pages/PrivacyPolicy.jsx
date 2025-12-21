@@ -112,7 +112,7 @@ export default function PrivacyPolicy() {
             {/* Intro */}
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-8">
                 <p className="text-gray-300 leading-relaxed">
-                    A InovaSys e o RAT Móvel estão comprometidos em proteger sua privacidade. Esta política descreve como coletamos, usamos e protegemos suas informações pessoais em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
+                    A InovaSys e o PaperX estão comprometidos em proteger sua privacidade. Esta política descreve como coletamos, usamos e protegemos suas informações pessoais em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
                 </p>
             </div>
 

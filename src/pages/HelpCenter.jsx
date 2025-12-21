@@ -13,7 +13,7 @@ const faqCategories = [
 const faqItems = [
     {
         category: 'conta',
-        question: 'Como criar minha conta no RAT Móvel?',
+        question: 'Como criar minha conta no PaperX?',
         answer: 'Para criar sua conta, acesse nosso site e clique em "Testar Grátis". Preencha seus dados e você receberá um email de confirmação. O processo leva menos de 2 minutos!'
     },
     {
@@ -44,12 +44,12 @@ const faqItems = [
     {
         category: 'tecnico',
         question: 'O app funciona sem internet?',
-        answer: 'Sim! O RAT Móvel foi projetado para funcionar 100% offline. Suas OS, clientes e máquinas ficam sincronizados localmente. Quando voltar a ter conexão, tudo é sincronizado automaticamente.'
+        answer: 'Sim! O PaperX foi projetado para funcionar 100% offline. Suas OS, clientes e máquinas ficam sincronizados localmente. Quando voltar a ter conexão, tudo é sincronizado automaticamente.'
     },
     {
         category: 'tecnico',
         question: 'Quais dispositivos são compatíveis?',
-        answer: 'O RAT Móvel funciona em smartphones e tablets Android (versão 8.0+) e iOS (versão 14+). Também temos versão web para acessar no computador.'
+        answer: 'O PaperX funciona em smartphones e tablets Android (versão 8.0+) e iOS (versão 14+). Também temos versão web para acessar no computador.'
     },
     {
         category: 'tecnico',

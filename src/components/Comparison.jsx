@@ -107,7 +107,7 @@ export default function Comparison() {
                                 <CheckCircle className="text-primary" size={20} />
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold text-white">O Jeito RAT Móvel</h3>
+                                <h3 className="text-xl font-bold text-white">O Jeito PaperX</h3>
                                 <p className="text-primary/70 text-xs">Controle. Lucro. Profissionalismo.</p>
                             </div>
                         </div>

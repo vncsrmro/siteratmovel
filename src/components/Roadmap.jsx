@@ -61,7 +61,7 @@ export default function Roadmap() {
                     viewport={{ once: true }}
                     className="text-center text-gray-500 text-sm mt-6"
                 >
-                    O RAT Móvel não para no tempo. Novas funcionalidades todo mês.
+                    O PaperX não para no tempo. Novas funcionalidades todo mês.
                 </motion.p>
             </div>
         </section>

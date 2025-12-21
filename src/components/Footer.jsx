@@ -31,8 +31,8 @@ const contactInfo = [
     },
     {
         icon: <Mail size={18} className="text-primary" />,
-        text: "ratmovel@inovasys.digital",
-        href: "mailto:ratmovel@inovasys.digital",
+        text: "paperx@inovasys.digital",
+        href: "mailto:paperx@inovasys.digital",
     },
     {
         icon: <MapPin size={18} className="text-primary" />,

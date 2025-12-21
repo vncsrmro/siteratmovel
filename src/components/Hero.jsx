@@ -29,19 +29,7 @@ export default function Hero() {
                 {/* Logo no topo - visível em mobile */}
                 <div className="flex justify-center lg:justify-start mb-8 animate-fadeIn">
                     <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/20">
-                            <svg viewBox="0 0 24 24" className="w-7 h-7 text-black" fill="currentColor">
-                                <rect x="5" y="2" width="14" height="20" rx="2" fill="currentColor" />
-                                <rect x="7" y="5" width="10" height="12" rx="1" fill="#070a08" />
-                            </svg>
-                        </div>
-                        <div>
-                            <span className="text-2xl font-bold">
-                                <span className="text-white">RAT</span>
-                                <span className="text-primary"> Móvel</span>
-                            </span>
-                            <p className="text-xs text-gray-500">by InovaSys</p>
-                        </div>
+                        <img src="/paperx-logo.png" alt="PaperX" className="h-14 w-auto object-contain" />
                     </div>
                 </div>
 
@@ -119,7 +107,7 @@ export default function Hero() {
                             <div className="relative rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl shadow-primary/10">
                                 <img
                                     src="/images/hero-technician.png"
-                                    alt="Técnico em campo usando o RAT Móvel"
+                                    alt="Técnico em campo usando o PaperX"
                                     className="w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[400px] h-auto object-cover"
                                     loading="eager"
                                 />

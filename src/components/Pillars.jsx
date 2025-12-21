@@ -55,7 +55,7 @@ export default function Pillars() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                        Por que <span className="text-primary">RAT Móvel</span>?
+                        Por que <span className="text-primary">PaperX</span>?
                     </h2>
                     <p className="text-gray-400 max-w-xl mx-auto">
                         Os 3 pilares que fazem a diferença na sua assistência técnica

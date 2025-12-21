@@ -218,7 +218,7 @@ export default function Pricing() {
                     className="text-center max-w-3xl mx-auto p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm"
                 >
                     <p className="text-gray-400 text-sm leading-relaxed">
-                        <span className="text-primary font-bold">Nota Importante:</span> Diferente da concorrência, no RAT Móvel você não paga a mais para desbloquear funções. Do plano Essencial ao Enterprise, você tem o poder total do sistema em suas mãos. Módulos de terceiros (como emissão fiscal e disparo de WhatsApp API) podem ter custos adicionais de integração.
+                        <span className="text-primary font-bold">Nota Importante:</span> Diferente da concorrência, no PaperX você não paga a mais para desbloquear funções. Do plano Essencial ao Enterprise, você tem o poder total do sistema em suas mãos. Módulos de terceiros (como emissão fiscal e disparo de WhatsApp API) podem ter custos adicionais de integração.
                     </p>
                 </motion.div>
 

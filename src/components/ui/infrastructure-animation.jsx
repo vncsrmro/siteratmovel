@@ -5,7 +5,7 @@ import { cn } from "../../lib/utils";
 
 const InfrastructureAnimation = ({
     className,
-    circleText = "RAT",
+    circleText = "PaperX",
     badgeTexts = {
         first: "SYNC",
         second: "AUTH",

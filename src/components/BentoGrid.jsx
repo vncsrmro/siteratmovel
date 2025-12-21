@@ -30,7 +30,7 @@ const features = [
     {
         icon: PieChart,
         title: "Financeiro Integrado",
-        description: "Do RAT direto para o faturamento. Controle total.",
+        description: "Do Relatório direto para o faturamento. Controle total.",
         size: "normal",
         gradient: "from-orange-500/20 to-yellow-500/10",
         iconBg: "bg-orange-500/20 text-orange-400",

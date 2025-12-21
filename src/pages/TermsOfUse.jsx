@@ -8,7 +8,7 @@ const sections = [
     {
         id: 'aceitacao',
         title: '1. Aceitação dos Termos',
-        content: `Ao acessar ou usar o RAT Móvel ("Serviço"), você concorda em cumprir estes Termos de Uso. Se você não concordar com qualquer parte destes termos, não poderá acessar o Serviço.
+        content: `Ao acessar ou usar o PaperX ("Serviço"), você concorda em cumprir estes Termos de Uso. Se você não concordar com qualquer parte destes termos, não poderá acessar o Serviço.
 
 O uso continuado do Serviço após alterações nos termos constitui aceitação das modificações.`,
         highlight: true,
@@ -16,7 +16,7 @@ O uso continuado do Serviço após alterações nos termos constitui aceitação
     {
         id: 'servico',
         title: '2. Descrição do Serviço',
-        content: `O RAT Móvel é uma plataforma de gestão para assistências técnicas que oferece:
+        content: `O PaperX é uma plataforma de gestão para assistências técnicas que oferece:
 
 • Gerenciamento de Ordens de Serviço (OS)
 • Cadastro de clientes e máquinas
@@ -86,7 +86,7 @@ Consulte nossa Política de Privacidade para mais detalhes.`,
         content: `Todos os direitos de propriedade intelectual do Serviço pertencem à InovaSys:
 
 • Código-fonte, design e interface do aplicativo
-• Marcas registradas RAT Móvel e InovaSys
+• Marcas registradas PaperX e InovaSys
 • Documentação e materiais de suporte
 • Algoritmos e tecnologias proprietárias
 
@@ -150,7 +150,7 @@ export default function TermsOfUse() {
                     <div>
                         <h2 className="text-lg font-semibold text-white mb-2">Leia com Atenção</h2>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            Estes Termos de Uso ("Termos") regem o uso do aplicativo e serviços RAT Móvel, desenvolvido e operado pela InovaSys Tecnologia LTDA ("InovaSys", "nós" ou "nosso").
+                            Estes Termos de Uso ("Termos") regem o uso do aplicativo e serviços PaperX, desenvolvido e operado pela InovaSys Tecnologia LTDA ("InovaSys", "nós" ou "nosso").
                         </p>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ export default function TermsOfUse() {
             >
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                     <p className="text-gray-400 text-sm text-center sm:text-left">
-                        Ao usar o RAT Móvel, você concorda com estes termos.
+                        Ao usar o PaperX, você concorda com estes termos.
                     </p>
                     <div className="flex gap-3">
                         <Link

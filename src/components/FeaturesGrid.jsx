@@ -23,7 +23,7 @@ const moduleCategories = [
         name: "Operacional",
         color: "primary",
         modules: [
-            { icon: FileText, name: "Gestão de RATs", desc: "Voz, fotos, assinatura" },
+            { icon: FileText, name: "Gestão de Relatórios", desc: "Voz, fotos, assinatura" },
             { icon: Calculator, name: "Orçamentos", desc: "Link para aprovação" },
             { icon: Calendar, name: "Agenda", desc: "Calendário + lembretes" },
         ]

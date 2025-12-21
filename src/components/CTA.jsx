@@ -41,13 +41,13 @@ export default function CTA() {
 
                             {/* Subheading */}
                             <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-                                Fale com nossa equipe e descubra como o RAT Móvel pode aumentar sua produtividade em até 40%.
+                                Fale com nossa equipe e descubra como o PaperX pode aumentar sua produtividade em até 40%.
                             </p>
 
                             {/* CTA Buttons */}
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
                                 <motion.a
-                                    href="https://wa.me/5519960003434?text=Olá! Gostaria de saber mais sobre o RAT Móvel."
+                                    href="https://wa.me/5519960003434?text=Olá! Gostaria de saber mais sobre o PaperX."
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     whileHover={{ scale: 1.05 }}

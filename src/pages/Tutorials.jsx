@@ -15,7 +15,7 @@ const tutorials = [
     {
         id: 1,
         category: 'inicio',
-        title: 'Configuração Inicial do RAT Móvel',
+        title: 'Configuração Inicial do PaperX',
         description: 'Aprenda a configurar sua conta e personalizar o app para seu negócio.',
         duration: '8 min',
         icon: <Settings size={24} />,
@@ -157,7 +157,7 @@ export default function Tutorials() {
     return (
         <PageLayout title="Tutoriais">
             <p className="text-gray-400 text-lg mb-8">
-                Aprenda tudo sobre o RAT Móvel com nossos tutoriais em vídeo e guias passo a passo.
+                Aprenda tudo sobre o PaperX com nossos tutoriais em vídeo e guias passo a passo.
             </p>
 
             {/* Category Filter */}
@@ -224,7 +224,7 @@ export default function Tutorials() {
                 </span>
                 <h3 className="text-lg font-semibold text-white mb-2">Novos tutoriais toda semana</h3>
                 <p className="text-gray-500 text-sm">
-                    Estamos preparando mais conteúdos para ajudar você a dominar o RAT Móvel.
+                    Estamos preparando mais conteúdos para ajudar você a dominar o PaperX.
                 </p>
             </motion.div>
         </PageLayout>

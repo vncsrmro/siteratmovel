@@ -11,7 +11,7 @@ const testimonials = [
             handle: "RVTEC Assistência",
             avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face"
         },
-        text: "O RAT Móvel revolucionou minha assistência técnica. Antes eu perdia horas preenchendo papéis e ainda esquecia de cobrar peças. Agora tudo é automático, meus clientes ficam impressionados com o profissionalismo!",
+        text: "O PaperX revolucionou minha assistência técnica. Antes eu perdia horas preenchendo papéis e ainda esquecia de cobrar peças. Agora tudo é automático, meus clientes ficam impressionados com o profissionalismo!",
     },
     {
         author: {
@@ -27,7 +27,7 @@ const testimonials = [
             handle: "TechFrio Soluções",
             avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face"
         },
-        text: "Como gestora de uma equipe de 8 técnicos, o RAT Móvel me deu controle total. Sei onde cada um está, quanto faturamos e o histórico de cada máquina. Aumentamos 35% no faturamento!",
+        text: "Como gestora de uma equipe de 8 técnicos, o PaperX me deu controle total. Sei onde cada um está, quanto faturamos e o histórico de cada máquina. Aumentamos 35% no faturamento!",
     },
     {
         author: {
@@ -43,7 +43,7 @@ const testimonials = [
             handle: "FL Manutenção Industrial",
             avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face"
         },
-        text: "Testei vários sistemas antes, mas o RAT Móvel é o único que funciona de verdade em campo. Interface simples, funciona offline e sincroniza tudo quando volta a internet. Perfeito!",
+        text: "Testei vários sistemas antes, mas o PaperX é o único que funciona de verdade em campo. Interface simples, funciona offline e sincroniza tudo quando volta a internet. Perfeito!",
     },
 ];
 
@@ -71,7 +71,7 @@ export default function Testimonials() {
                         Quem usa, <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">recomenda</span>
                     </h2>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        +500 assistências técnicas já transformaram sua gestão com o RAT Móvel
+                        +500 assistências técnicas já transformaram sua gestão com o PaperX
                     </p>
                 </motion.div>
 

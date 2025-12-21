@@ -2,41 +2,10 @@ import React, { useState } from 'react';
 import { Menu, X, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Custom SVG Logo Component
+// Custom Logo Component
 const Logo = ({ className = "" }) => (
     <div className={`flex items-center gap-3 ${className}`}>
-        <div className="relative w-10 h-10">
-            <svg viewBox="0 0 40 40" className="w-full h-full">
-                <defs>
-                    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#00FF94" />
-                        <stop offset="100%" stopColor="#00B8FF" />
-                    </linearGradient>
-                </defs>
-                <rect x="8" y="4" width="18" height="32" rx="3" fill="url(#phoneGradient)" opacity="0.9" />
-                <rect x="10" y="8" width="14" height="20" rx="1" fill="#050505" />
-                <circle cx="28" cy="28" r="10" fill="#050505" stroke="#00FF94" strokeWidth="2" />
-                <circle cx="28" cy="28" r="4" fill="#00FF94" />
-                {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => (
-                    <rect
-                        key={i}
-                        x="26"
-                        y="17"
-                        width="4"
-                        height="4"
-                        fill="#00FF94"
-                        transform={`rotate(${angle} 28 28)`}
-                    />
-                ))}
-            </svg>
-        </div>
-        <div className="flex flex-col leading-none">
-            <span className="text-xl font-extrabold tracking-tight">
-                <span className="text-white">RAT</span>
-                <span className="text-primary"> Móvel</span>
-            </span>
-            <span className="text-[10px] text-gray-500 tracking-widest uppercase">by InovaSys</span>
-        </div>
+        <img src="/paperx-logo.png" alt="PaperX" className="h-10 w-auto object-contain" />
     </div>
 );
 

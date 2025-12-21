@@ -15,7 +15,7 @@ export default function ProblemSolution() {
                         <span className="text-red-400">papel e planilhas</span>?
                     </h2>
                     <p className="text-gray-400 max-w-xl mx-auto">
-                        Veja como o RAT Móvel transforma seu trabalho de campo
+                        Veja como o PaperX transforma seu trabalho de campo
                     </p>
                 </div>
 
@@ -82,7 +82,7 @@ export default function ProblemSolution() {
                         {/* Solutions list */}
                         <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                             <Smartphone size={20} className="text-primary" />
-                            Com RAT Móvel
+                            Com PaperX
                         </h3>
                         <ul className="space-y-3">
                             {[
