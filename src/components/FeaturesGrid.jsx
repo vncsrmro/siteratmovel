@@ -3,7 +3,7 @@ import { Card, CardContent } from './ui/card';
 import {
     PenLine, Mic, Camera, Users, History,
     Calculator, WifiOff, Globe, Zap, ChevronDown, Smartphone, RefreshCw, Lock,
-    FileText, Calendar, Wrench, Receipt, PieChart, BarChart3, Bell, Settings, Trash2, LayoutDashboard, UserCog
+    FileText, Calendar, Wrench, Receipt, PieChart, BarChart3, Bell, Settings, Trash2, LayoutDashboard, UserCog, QrCode
 } from 'lucide-react';
 
 // 7 Diferenciais
@@ -221,13 +221,13 @@ export default function FeaturesGrid() {
                         </CardContent>
                     </Card>
 
-                    <Card className="col-span-3 sm:col-span-2 bg-white/[0.02] border-white/10 hover:border-rose-500/30 transition-colors duration-200">
+                    <Card className="col-span-3 sm:col-span-2 bg-gradient-to-br from-rose-500/10 to-transparent border-rose-500/20 hover:border-rose-500/40 transition-colors duration-200">
                         <CardContent className="pt-6 text-center">
-                            <div className="w-10 h-10 mx-auto rounded-xl bg-rose-500/10 flex items-center justify-center">
-                                <History size={20} className="text-rose-400" />
+                            <div className="w-10 h-10 mx-auto rounded-xl bg-rose-500/20 flex items-center justify-center">
+                                <QrCode size={20} className="text-rose-400" />
                             </div>
-                            <h3 className="mt-4 text-sm font-bold text-white">Histórico de Máquinas</h3>
-                            <p className="text-gray-500 text-xs mt-1">CRM de equipamentos</p>
+                            <h3 className="mt-4 text-sm font-bold text-white">QR Code Inteligente</h3>
+                            <p className="text-gray-500 text-xs mt-1">Histórico em 1 scan</p>
                         </CardContent>
                     </Card>
 

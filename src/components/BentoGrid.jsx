@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { History, Send, PenLine, PieChart, Wrench, Camera, MapPin, Bell } from 'lucide-react';
+import { History, Send, PenLine, PieChart, Wrench, Camera, MapPin, Bell, QrCode } from 'lucide-react';
 
 const features = [
     {
-        icon: History,
-        title: "Histórico Completo",
-        description: "Saiba o que a máquina teve ANTES de abrir a maleta. Todas as manutenções, peças trocadas e fotos em um só lugar.",
+        icon: QrCode,
+        title: "QR Code Inteligente",
+        description: "Cada máquina tem sua identidade. Escaneie para ver o histórico ou abrir um chamado na hora.",
         size: "large",
         gradient: "from-primary/20 to-emerald-500/10",
         iconBg: "bg-primary/20 text-primary",

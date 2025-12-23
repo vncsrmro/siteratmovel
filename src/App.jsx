@@ -15,6 +15,7 @@ const Authority = lazy(() => import('./components/Authority'));
 const Pricing = lazy(() => import('./components/Pricing'));
 const CTA = lazy(() => import('./components/CTA'));
 const Footer = lazy(() => import('./components/Footer'));
+const QRCodeHighlight = lazy(() => import('./components/QRCodeHighlight'));
 
 // Lazy load pages
 const HelpCenter = lazy(() => import('./pages/HelpCenter'));
@@ -50,6 +51,9 @@ function HomePage() {
         <Suspense fallback={<LoadingFallback />}>
           <section id="problema">
             <ProblemSolution />
+          </section>
+          <section id="qrcode">
+            <QRCodeHighlight />
           </section>
           <section id="pilares">
             <Pillars />
