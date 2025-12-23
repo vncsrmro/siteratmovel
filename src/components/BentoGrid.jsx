@@ -4,9 +4,9 @@ import { History, Send, PenLine, PieChart, Wrench, Camera, MapPin, Bell, QrCode 
 
 const features = [
     {
-        icon: QrCode,
-        title: "QR Code Inteligente",
-        description: "Cada máquina tem sua identidade. Escaneie para ver o histórico ou abrir um chamado na hora.",
+        icon: History,
+        title: "Histórico Completo",
+        description: "Saiba o que a máquina teve ANTES de abrir a maleta. Todas as manutenções, peças trocadas e fotos em um só lugar.",
         size: "large",
         gradient: "from-primary/20 to-emerald-500/10",
         iconBg: "bg-primary/20 text-primary",
