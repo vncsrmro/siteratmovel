@@ -104,7 +104,7 @@ const Obrigado = () => {
 
                         {/* InovaSys Logo - White filter applied */}
                         <div className="group relative">
-                            <div className="absolute inset-0 bg-cyan-500/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             <img
                                 src="/inovasys-logo.png"
                                 alt="InovaSys"
