@@ -90,12 +90,12 @@ const Obrigado = () => {
                     <p className="text-center text-gray-500 text-sm mb-6">Desenvolvido por</p>
                     <div className="flex items-center justify-center gap-8 md:gap-12 flex-wrap">
                         {/* PaperX Logo */}
-                        <div className="group relative">
-                            <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        <div className="group relative cursor-pointer">
+                            <div className="absolute -inset-4 bg-primary/15 blur-2xl rounded-full scale-0 group-hover:scale-100 transition-all duration-500 ease-out" />
                             <img
                                 src="/paperx-logo.png"
                                 alt="PaperX"
-                                className="h-12 md:h-16 w-auto object-contain relative z-10 opacity-80 hover:opacity-100 transition-opacity duration-300"
+                                className="h-12 md:h-16 w-auto object-contain relative z-10 opacity-70 group-hover:opacity-100 transition-all duration-500 ease-out group-hover:scale-105"
                             />
                         </div>
 
@@ -103,12 +103,12 @@ const Obrigado = () => {
                         <div className="h-12 w-px bg-gradient-to-b from-transparent via-gray-600 to-transparent" />
 
                         {/* InovaSys Logo - White filter applied */}
-                        <div className="group relative">
-                            <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        <div className="group relative cursor-pointer">
+                            <div className="absolute -inset-4 bg-primary/15 blur-2xl rounded-full scale-0 group-hover:scale-100 transition-all duration-500 ease-out" />
                             <img
                                 src="/inovasys-logo.png"
                                 alt="InovaSys"
-                                className="h-12 md:h-16 w-auto object-contain relative z-10 opacity-80 hover:opacity-100 transition-opacity duration-300 brightness-0 invert"
+                                className="h-12 md:h-16 w-auto object-contain relative z-10 opacity-70 group-hover:opacity-100 transition-all duration-500 ease-out group-hover:scale-105 brightness-0 invert"
                             />
                         </div>
                     </div>
