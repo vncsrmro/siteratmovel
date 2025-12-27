@@ -21,6 +21,7 @@ const HelpCenter = lazy(() => import('./pages/HelpCenter'));
 const Tutorials = lazy(() => import('./pages/Tutorials'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const TermsOfUse = lazy(() => import('./pages/TermsOfUse'));
+const Obrigado = lazy(() => import('./pages/Obrigado'));
 
 // Loading fallback
 const LoadingFallback = () => (
@@ -93,6 +94,7 @@ function App() {
           <Route path="/tutoriais" element={<Tutorials />} />
           <Route path="/privacidade" element={<PrivacyPolicy />} />
           <Route path="/termos" element={<TermsOfUse />} />
+          <Route path="/obrigado" element={<Obrigado />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
